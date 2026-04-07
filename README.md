@@ -122,8 +122,8 @@ This project is licensed under the MIT License.
 
 **Abhishek Kumar**
 
-* GitHub: https://github.com/Abhi725387
-* LinkedIn: https://www.linkedin.com/in/abhishek-kumar-0305943b7
+* GitHub: https://github.com/Abhi7253878
+* LinkedIn: www.linkedin.com/in/abhishek-kumar-0305943b7
 
 ---
 
