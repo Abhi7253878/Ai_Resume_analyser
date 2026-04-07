@@ -2,7 +2,7 @@ import type { Route } from "./+types/home";
 import {Link, useNavigate} from "react-router";
 import {useEffect, useState} from "react";
 import Navbar from "../navbar";
-import ResumeCard from "~/resumecard";
+import ResumeCard from "../components/ResumeCard";
 import { resumes as resumeData } from "../../constants/resumes"; // ✅ FIXED
 
 type KVItem = {

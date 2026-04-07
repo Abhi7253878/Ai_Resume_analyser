@@ -1,53 +1,3 @@
-interface Resume {
-    id: string;
-    companyName: string;
-    jobTitle: string;
-    imagePath: string;
-    resumePath: string;
-    feedback: {
-        overallScore: number;
-        ATS: {
-            score: number;
-            tips: {
-                type: "good" | "improve";
-                tip: string;
-            }[];
-        };
-        toneAndStyle: {
-            score: number;
-            tips: {
-                type: "good" | "improve";
-                tip: string;
-                explanation: string;
-            }[];
-        };
-        content: {
-            score: number;
-            tips: {
-                type: "good" | "improve";
-                tip: string;
-                explanation: string;
-            }[];
-        };
-        structure: {
-            score: number;
-            tips: {
-                type: "good" | "improve";
-                tip: string;
-                explanation: string;
-            }[];
-        };
-        skills: {
-            score: number;
-            tips: {
-                type: "good" | "improve";
-                tip: string;
-                explanation: string;
-            }[];
-        };
-    };
-}
-
 export const resumes: Resume[] = [
     {
         id: "1",
@@ -289,4 +239,3 @@ export const prepareInstructions = ({jobTitle, jobDescription}: { jobTitle: stri
       ${AIResponseFormat}
       Return the analysis as an JSON object, without any other text and without the backticks.
       Do not include any other text or comments.`;
-      
