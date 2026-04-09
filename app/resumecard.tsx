@@ -21,19 +21,21 @@ const ResumeCard = ({ resume: { id, companyName, jobTitle, feedback, imagePath }
         </div>
 
         <div className="flex-shrink-0">
-          
           <ScoreCircle score={feedback?.overallScore ?? 0} />
         </div>
 
       </div>
 
       <div className="gradient-border animate-in fade-in duration-1000 mt-4">
-        <div className="w-full h-full overflow-hidden rounded-lg">
+        
+        {/* ✅ FIX 1: removed h-full */}
+        <div className="w-full overflow-hidden rounded-lg">
           
+          {/* ✅ FIX 2: fixed height */}
           <img
             src={imagePath || "/images/default-resume.png"}
             alt="resume"
-            className="w-full h-[350px] max-sm:h-[200px] object-cover object-top"
+            className="w-full h-60 object-cover"
           />
 
         </div>
