@@ -58,6 +58,7 @@ export default function Home() {
 
     loadResumes();
   }, []);
+  
 
   return (
     <main className="bg-[url('/bg-main.svg')] bg-cover">
@@ -71,7 +72,10 @@ export default function Home() {
             <h2>Review your submissions and check AI-powered feedback.</h2>
           )}
         </div>
-
+{/* <img
+src="./resume_01.png"
+alt="aa"
+/> */}
         {loadingResumes && (
           <div className="flex flex-col items-center justify-center">
             {/* ✅ FIX 3: correct Tailwind width */}
@@ -82,10 +86,10 @@ export default function Home() {
         {!loadingResumes && resumes.length > 0 && (
           <div className="resumes-section">
             {resumes.map((resume) => (
-              <ResumeCard key={resume.id} resumes={resume} />
-            ))}
+<ResumeCard key={resume.id} resume={resume} />            ))}
           </div>
         )}
+        
 
         {!loadingResumes && resumes.length === 0 && (
           <div className="flex flex-col items-center justify-center mt-10 gap-4"></div>
