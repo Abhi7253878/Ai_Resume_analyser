@@ -75,14 +75,14 @@ export default function Home() {
         {loadingResumes && (
           <div className="flex flex-col items-center justify-center">
             {/* ✅ FIX 3: correct Tailwind width */}
-            <img src="/images/resume-scan-2.gif" className="w-40" />
+            <img src="/resume-scan-2.gif" className="w-40" />
           </div>
         )}
 
         {!loadingResumes && resumes.length > 0 && (
           <div className="resumes-section">
             {resumes.map((resume) => (
-              <ResumeCard key={resume.id} resume={resume} />
+              <ResumeCard key={resume.id} resumes={resume} />
             ))}
           </div>
         )}
